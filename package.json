@@ -1,0 +1,15 @@
+{
+  "name": "myassignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "minMax.js",
+  "scripts": {
+    "test": "jasmine minmax_spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
