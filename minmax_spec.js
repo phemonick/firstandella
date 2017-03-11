@@ -26,12 +26,12 @@ var myApp = require('./minMax.js');
         expect(myApp.findMinMax([78, 8, 68, 1,89,30,40,99])).toEqual([1,99]);
       });
 
-      it('should return [50,999] for [823,720,540,450,900,1200,900,999,50]', function () {
-        expect(myApp.findMinMax([823,720,540,450,900,1200,900,999,50])).toEqual([50,999]);
+      it('should return [50,1200] for [823,720,540,450,900,1200,900,999,50]', function () {
+        expect(myApp.findMinMax([823,720,540,450,900,1200,900,999,50])).toEqual([50,1200]);
       });
 
       it('should return [4, 200] for [67, 62, 150, 44, 7, 78, 200, 68, 8]', function () {
-        expect(myApp.findMinMax([4, 66, 6, 44, 7, 78, 8, 68, 40])).toEqual([4, 200]);
+        expect(myApp.findMinMax([67, 62, 150, 44, 7, 78, 200, 68, 8])).toEqual([4, 200]);
       });
 
     });
@@ -39,15 +39,15 @@ var myApp = require('./minMax.js');
     describe('Return the number in the list in a new list follows `[min]` when the number is the min and max number in that list', function () {
 
       it('should return [4] for [4, 4, 4, 4]', function () {
-        expect(findMinMax([4, 4, 4, 4])).toEqual([4]);
+        expect(myApp.findMinMax([4, 4, 4, 4])).toEqual([4]);
       });
 
       it('should return [10] for [10, 10, 10, 10]', function () {
-        expect(findMinMax([10, 10, 10, 10])).toEqual([10]);
+        expect(myApp.findMinMax([10, 10, 10, 10])).toEqual([10]);
       });
 
       it('should return [2] for [2]', function () {
-        expect(findMinMax([2])).toEqual([2]);
+        expect(myApp.findMinMax([2])).toEqual([2]);
       });
 
     });
