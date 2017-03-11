@@ -13,11 +13,18 @@ function findMinMax(arr){
 
 
 	}
-	my[0]=min;
-	my[1]=max;
+	
+	if (max==min){
+		my.push(min);
+		
+		return my;
+	}else{
+		my.push(min);
+	my.push(max);
 	return my;
 }
-
+}
+console.log(findMinMax([4, 66, 6, 44, 7, 78, 8, 68, 2]))
 module.exports = {
 	findMinMax: findMinMax
 }
