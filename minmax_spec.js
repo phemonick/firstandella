@@ -31,7 +31,7 @@ var myApp = require('./minMax.js');
       });
 
       it('should return [4, 200] for [67, 62, 150, 44, 7, 78, 200, 68, 8]', function () {
-        expect(myApp.findMinMax([67, 62, 150, 44, 7, 78, 200, 68, 8])).toEqual([4, 200]);
+        expect(myApp.findMinMax([67, 62, 150, 44, 4, 78, 200, 68, 8])).toEqual([4, 200]);
       });
 
     });
